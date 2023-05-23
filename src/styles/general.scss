@@ -1,0 +1,62 @@
+@use "./partials/variables" as *;
+
+// RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+// COMMON
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    // font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: $col-secondary;
+    color: $col-primary;
+}
+
+ul {
+    list-style: none;
+}
+
+// UTILITY
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
