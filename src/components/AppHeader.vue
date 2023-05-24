@@ -33,6 +33,7 @@ header {
     color: $col-white;
 
     position: fixed;
+    opacity: 0.8;
 }
 
 .container {
@@ -40,17 +41,17 @@ header {
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     position: relative;
 
     text-shadow: 0 0 5px #ffffff50;
 
     .under-logo {
-        font-size: 0.8rem;
+        font-size: 0.51rem;
         position: absolute;
-        bottom: 0.2rem;
-        right: -2rem;
-        transform: rotate(-4deg);
+        bottom: -0.2rem;
+        right: -1rem;
+        transform: rotate(-9deg);
 
         color: $col-secondary;
         text-shadow: none;
@@ -60,5 +61,19 @@ header {
 
 li {
     padding-left: 1rem;
+}
+
+// Media query
+@media screen and (min-width: 780px) {
+    .logo {
+        font-size: 2.5rem;
+
+        .under-logo {
+            font-size: 0.8rem;
+            position: absolute;
+            bottom: 0.2rem;
+            right: -2rem;
+        }
+    }
 }
 </style>
